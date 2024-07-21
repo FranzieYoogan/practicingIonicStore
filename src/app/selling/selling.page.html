@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-folder></app-folder>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <img class="imgVelotrol" id="velotrol" src="/assets/images/batman.jpg" alt="">
+  
+  <section class="containerSomething">
+
+    <div style="display: flex; gap: 0.5em;">
+
+      
+
+    <div>
+
+      <h1 (click)="tchuco()" id="tchuco" class="flash">H</h1>
+
+    </div>
+
+    <div>
+
+      <h1 id="hulk" (click)="hulk()" class="hulk">H</h1>
+
+    </div>
+
+    <div>
+
+      <h1 (click)="batman()" id="batman" class="batman">H</h1>
+
+    </div>
+
+
+
+</div>
+
+<div class="containerPrice">
+
+  <h1>$50.0</h1>
+
+</div>
+
+  </section>
+
+  <div class="containerButton">
+
+    <button type="button" (click)="add()" class="buttonCart text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add to cart <img class="cartStyle" id="cartStyle" src="/assets/icon/cart.png" alt=""></button>
+
+  </div>
+
+  <section class="giftContainer">
+
+    <div class="giftItem" id="giftItem">
+
+      <img src="/assets/images/gift.gif" alt="">
+
+    </div>
+
+  </section>
+
+</ion-content>

@@ -16,5 +16,13 @@ export class FolderPage implements OnInit {
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    const title:any = document.getElementById('title')
+
+    if(window.location.pathname == "/selling") {
+
+      title.innerHTML = "Selling"
+
+    }
+
   }
 }
